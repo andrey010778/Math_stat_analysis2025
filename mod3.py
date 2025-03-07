@@ -16,7 +16,7 @@ for value in variational_series:
 print(frequency_distribution)
 
 import matplotlib.pyplot as plt
-import numpy as np
+import mod_numpy as np
 
 # Исходные данные
 data1 = [7.5, 6.1, 7, 6, 7.4, 6.8, 6.3, 7.5, 7, 7.5, 7.6, 10.6, 6, 8.2, 7.1, 9.6, 8.5, 9.2, 8, 8, 8.7, 9.8, 8.3, 8.5, 9.5, 6.3, 5.8, 7.2, 7.5, 6.5]
