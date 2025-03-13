@@ -98,7 +98,6 @@ def trim_mean_dive(scores, hard_coef):
     sorted_array = np.sort(scores)
     cut_middle = sorted_array[1:-1]
     final_score = np.sum(cut_middle)*hard_coef
-    print(final_score)
     return final_score
 
-trim_mean_dive(scores, hard_coef)
+print(trim_mean_dive(scores, hard_coef))
