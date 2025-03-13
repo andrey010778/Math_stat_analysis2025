@@ -83,3 +83,21 @@ print('Count', counts) #Частоты
 
 data = np.array([1, 2, 3, 4, 5, 6])
 print(np.cumsum(data))
+
+'''Hometask:'''
+
+goals = []
+
+for i in range(7):
+    i = int(input('Input score: '))
+    goals.append(i)
+
+hard_coef = float(input('Input hard coef from 1.2 to 3.6: '))
+
+def trim_mean_dive(goals, hard_coef):
+    sorted_array = sorted(goals)
+    cut_middle = sorted_array[1:-1]
+    final_score = sum(cut_middle)*hard_coef
+    return final_score
+
+trim_mean_dive(goals, hard_coef)
